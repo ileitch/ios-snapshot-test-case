@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "iOSSnapshotTestCase"
+  s.name         = "FBSnapshotTestCase"
   s.module_name  = "FBSnapshotTestCase"
   s.version      = "6.1.0"
   s.summary      = "Snapshot view unit tests for iOS"
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
     cs.private_header_files = 'FBSnapshotTestCase/Categories/UIImage+Compare.h','FBSnapshotTestCase/Categories/UIImage+Diff.h','FBSnapshotTestCase/Categories/UIImage+Snapshot.h'
   end
   s.subspec 'SwiftSupport' do |cs|
-    cs.dependency 'iOSSnapshotTestCase/Core'
+    cs.dependency 'FBSnapshotTestCase/Core'
     cs.source_files = 'FBSnapshotTestCase/**/*.swift'
   end
 end
